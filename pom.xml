@@ -69,7 +69,7 @@
         <module>bootstrap-core</module>
         <module>bootstrap-core-optional</module>
         <module>bootstrap</module>
-        <module>bootstrap-java9</module>
+        <!--<module>bootstrap-java9</module>-->
         <module>collector</module>
         <module>commons</module>
         <module>commons-hbase</module>
@@ -195,11 +195,11 @@
                 <artifactId>pinpoint-bootstrap</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.navercorp.pinpoint</groupId>
-                <artifactId>pinpoint-bootstrap-java9</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>com.navercorp.pinpoint</groupId>-->
+                <!--<artifactId>pinpoint-bootstrap-java9</artifactId>-->
+                <!--<version>${project.version}</version>-->
+            <!--</dependency>-->
             <dependency>
                 <groupId>com.navercorp.pinpoint</groupId>
                 <artifactId>pinpoint-profiler</artifactId>
@@ -835,9 +835,9 @@
                                 <requireEnvironmentVariable>
                                     <variableName>JAVA_8_HOME</variableName>
                                 </requireEnvironmentVariable>
-                                <requireEnvironmentVariable>
-                                    <variableName>JAVA_9_HOME</variableName>
-                                </requireEnvironmentVariable>
+                                <!--<requireEnvironmentVariable>-->
+                                    <!--<variableName>JAVA_9_HOME</variableName>-->
+                                <!--</requireEnvironmentVariable>-->
                             </rules>
                             <fail>true</fail>
                         </configuration>
